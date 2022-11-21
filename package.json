@@ -1,0 +1,27 @@
+{
+  "name": "todo-proj",
+  "version": "1.0.0",
+  "description": "To do test",
+  "main": "todo.js",
+  "scripts": {
+    "test": "jest",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint",
+      "prettier --write ."
+    ]
+  },
+  "author": "Roopa <mrcetroopa@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "jest": "^29.3.1"
+  }
+}
