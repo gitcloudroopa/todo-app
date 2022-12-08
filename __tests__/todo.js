@@ -41,7 +41,7 @@ describe("Todo Test Cases", () => {
   test("Test for overdue", () => {
     expect(
       overdue().every((todo) => {
-        return todo.dueDate === yesterday;
+        return todo.dueDate <= yesterday;
       })
     ).toBe(true);
   });
@@ -57,7 +57,7 @@ describe("Todo Test Cases", () => {
   test("Test for dueLater", () => {
     expect(
       dueLater().every((todo) => {
-        return todo.dueDate === tomorrow;
+        return todo.dueDate >= tomorrow;
       })
     ).toBe(true);
   });
